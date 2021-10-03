@@ -11,7 +11,7 @@ app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
 
 
-
+#demo
 @app.route('/',methods=['GET','POST'])
 def index():
     if request.method == "POST":
