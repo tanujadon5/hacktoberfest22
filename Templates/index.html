@@ -1,22 +1,26 @@
 <html>
 <head>
-<title>
-    My Website
-<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-</title>
+    <title>My Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/desgin.css')}}">
 </head>
 <body>
-<form method="POST" action="">
-    <center><h1><br></h1></center>
-<center class="myclass">
-    <a href="{{ url_for('signup') }}" target="_blank">click here for sign up</a><br>
-    <a href="{{ url_for('logout')}}" target="_blank">click here for logout</a><br>
-First name:<br>
-<input type="text" name="fname"><br>
-Last name:<br>
-<input type="text" name="lname">
-<input type="submit">
-</center>
-</form>
+    <nav class="navbar">
+        <a href="{{ url_for('signup') }}" target="_blank">sign up</a>
+        <a href="{{ url_for('logout')}}" target="_blank">logout</a>
+    <nav>
+
+    
+        <form method="POST" action="#" class="mainclass">
+            <div class="child">
+                First name:<br>
+            <input type="text" name="fname"><br><br>
+            Last name:<br>
+            <input type="text" name="lname"><br><br>
+            <input type="submit">
+            </div>
+            
+        </form>
+
+
 </body>
 </html>

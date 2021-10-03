@@ -2,4 +2,31 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #444;
+  color: rgb(243, 233, 233);
+}
+.navbar {
+  height: 50px;
+  background: #444;
+}
+nav a{
+  text-decoration: none;
+  float: left;
+  padding: 10px;
+  color:aliceblue
+}
+
+.mainclass{
+  width: 400px;
+  height: 400px;
+  /* background: black; */
+  margin-top:0em;
+  display: flex;
+}
+.child{
+  width: 500;
+  height: 500px;
+  background: black;
+  margin-left: 10%;
+  margin-top: 30%;
+  
+}
