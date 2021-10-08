@@ -2,21 +2,23 @@
 <head>
     <title>My Website</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/desgin.css')}}">
+    	
+
 </head>
-<body>
-    <nav class="navbar">
-        <a href="{{ url_for('signup') }}" target="_blank">sign up</a>
-        <a href="{{ url_for('logout')}}" target="_blank">logout</a>
+<body style="background-color: #C9C9C9;">
+    <nav class="navbar" style="margin: auto; width: 50%; padding: 3%; background-color: #F5F5F5; text-align: left;">
+        <a href="{{ url_for('signup') }}" target="_blank">Sign up</a>
+        <a href="{{ url_for('logout')}}" target="_blank">Logout</a>
     <nav>
 
     
-        <form method="POST" action="#" class="mainclass">
-            <div class="child">
+        <form method="POST" action="#" class="mainclass login-wrap">
+            <div class="child" style=" margin-top: 5px;">
                 First name:<br>
-            <input type="text" name="fname"><br><br>
+            <input type="text" name="fname" style="border-radius: 5px;background: #ffffff;padding: 5px;width: 200;height: 40;"><br><br>
             Last name:<br>
-            <input type="text" name="lname"><br><br>
-            <input type="submit">
+            <input type="text" name="lname" style="border-radius: 5px;background: #ffffff;padding: 5px;width: 200;height: 40;"><br><br>
+            <input type="submit" style="border-radius: 5px; background: #04AA6D!important; padding: 5px; width: 100px ;height: 40px; color:#ffffff">
             </div>
             
         </form>
